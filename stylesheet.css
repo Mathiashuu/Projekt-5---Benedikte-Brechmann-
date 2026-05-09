@@ -1,5 +1,6 @@
 
 /* Opsætning af Interface CSS */
+
     :root {  /* Farve variabler - tilføj til CSS med var() */
         --background-color: #f9f9f9;
         --primary-red-color: #E30613; 
@@ -9,16 +10,13 @@
         --accent-button-color: #ffffff;
     }
 
-    * { /* margin af vores interface */
-        margin: 20px;
-        padding: 0;
-    }
-
-
     body {
-
         background-color: var(--background-color);
+        max-width: 900px;
+        margin: 20px;
     }
+
+    /* Font og brødtekst */
 
     h1 {
         color: var(--text-color);
@@ -27,6 +25,8 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
     h2 {
@@ -36,5 +36,54 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
+        margin: 0;
+        padding-bottom: 18px;
     }
+
+    h3 {
+        color: var(--text-color);
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin: 0;
+        padding-bottom: 18px;
+    }
+
+    p {
+        color: var(--text-color);
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        margin: 0;
+        font-style: normal;
+    }
+
+    /* Knapper og CTA */
+
+    .button { /* Button style til "Køb", "Bekræft" og "Videre" knapper */
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 5px 28px;
+        margin: 10px 10px;
+        border-style: none;
+        background-color: var(--primary-red-color);
+        color: var(--accent-button-color);
+    }
+
+    .button--booking { /* Booking knap */
+        border-radius: 10px;
+        padding: 10px 40px;
+    }
+
+    .button--logOut {  /* log ud knap */
+        font-size: 14px;
+        margin: 8px 8px;
+        background-color: var(--accent-blue-color);
+        color: var(--text-color);
+    }
+
 /* Opsætning af Interface CSS, slut */
