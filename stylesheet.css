@@ -193,4 +193,32 @@
 
     /* Onboarding 1 HTML'S CSS, slut */
 
+
+    /* Homepage  */
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .header--logo img {
+    height: 40px;  
+    width: auto;
+    }
+
+    .header--logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    }
+
+    /* Homepage Slut  */
+
 /* Andre CSS elementer, slut */
