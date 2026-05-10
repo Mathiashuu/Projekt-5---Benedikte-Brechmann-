@@ -107,6 +107,10 @@
     .icon--click {  /* Class til elementer der kan klikkes på */
         cursor: pointer;
     }
+    
+
+
+    
 
     /* NOTE TIL LAU -- Husk at opsætte px til REM i spacing - mvh Lau */
 
@@ -116,5 +120,36 @@
 
 /* Andre CSS elementer */
 
+
+/* Onboarding 1 HTML'S CSS */
+
+/* status dots */
+.status-dots1 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot-active1 {
+    background-color: var(--text-color);
+}
+
+.dot1:hover {
+    background-color: #b0b0b0;
+}
+
+/* Onboarding 1 HTML'S CSS, slut */
 
 /* Andre CSS elementer, slut */
