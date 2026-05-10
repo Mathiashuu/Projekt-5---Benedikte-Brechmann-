@@ -14,10 +14,9 @@
 
     body {
         background-color: var(--background-color);
-        margin: 0 150px 0 150px;
-        padding: 0 20px 0 20px;
 
         /* Mobile Interface resolution */
+        margin: 0 150px 0 150px;
         max-width: 402px;
         min-width: 402px;
         height: 874px;
@@ -33,7 +32,7 @@
         font-weight: 600;
         font-style: normal;
         margin: 0;
-        padding-bottom: 20px;
+        padding: 16px 20px 20px 20px;
     }
 
     h2 {
@@ -44,7 +43,7 @@
         font-weight: 700;
         font-style: normal;
         margin: 0;
-        padding-bottom: 18px;
+        padding: 16px 20px 18px 20px;
     }
 
     h3 {
@@ -55,7 +54,7 @@
         font-weight: 600;
         font-style: normal;
         margin: 0;
-        padding-bottom: 18px;
+        padding: 14px 20px 18px 20px;
     }
 
     p {
@@ -66,6 +65,7 @@
         font-weight: 400;
         margin: 0;
         font-style: normal;
+        padding: 0 20px 0 20px;
     }
 
     /* Knapper og CTA */
@@ -109,9 +109,6 @@
     }
     
 
-
-    
-
     /* NOTE TIL LAU -- Husk at opsætte px til REM i spacing - mvh Lau */
 
 /* Opsætning af Interface CSS, slut */
@@ -120,36 +117,35 @@
 
 /* Andre CSS elementer */
 
+    /* Onboarding 1 HTML'S CSS */
 
-/* Onboarding 1 HTML'S CSS */
+        /* status dots */
+        .status-dots1 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 20px;
+        }
 
-/* status dots */
-.status-dots1 {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 20px;
-}
+        .dot1 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.dot1 {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        .dot-active1 {
+            background-color: var(--text-color);
+        }
 
-.dot-active1 {
-    background-color: var(--text-color);
-}
+        .dot1:hover {
+            background-color: #b0b0b0;
+        }
 
-.dot1:hover {
-    background-color: #b0b0b0;
-}
-
-/* Onboarding 1 HTML'S CSS, slut */
+    /* Onboarding 1 HTML'S CSS, slut */
 
 /* Andre CSS elementer, slut */
