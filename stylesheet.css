@@ -8,12 +8,19 @@
 
         --accent-blue-color: #e8f1f8;
         --accent-button-color: #ffffff;
+
+        background-color: #1d1d1b;
     }
 
     body {
         background-color: var(--background-color);
-        max-width: 900px;
-        margin: 20px;
+        margin: 0 150px 0 150px;
+        padding: 5px 20px 5px 20px;
+
+        /* Mobile Interface resolution */
+        max-width: 402px;
+        min-width: 402px;
+        height: 874px;
     }
 
     /* Font og brødtekst */
