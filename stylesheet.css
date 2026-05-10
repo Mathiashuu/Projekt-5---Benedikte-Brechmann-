@@ -15,7 +15,7 @@
     body {
         background-color: var(--background-color);
         margin: 0 150px 0 150px;
-        padding: 5px 20px 5px 20px;
+        padding: 0 20px 0 20px;
 
         /* Mobile Interface resolution */
         max-width: 402px;
@@ -79,6 +79,7 @@
         border-style: none;
         background-color: var(--primary-red-color);
         color: var(--accent-button-color);
+        cursor: pointer;
     }
 
     .button--booking { /* Booking knap */
@@ -91,6 +92,20 @@
         margin: 8px 8px;
         background-color: var(--accent-blue-color);
         color: var(--text-color);
+    }
+
+    .button--guestLogIn {  /* Login som gæst */
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        border-style: none;
+        text-decoration: underline;
+        background-color: var(--background-color);
+        color: var(--primary-red-color);
+        cursor: pointer;
+    }
+
+    .icon--click {  /* Class til elementer der kan klikkes på */
+        cursor: pointer;
     }
 
     /* NOTE TIL LAU -- Husk at opsætte px til REM i spacing - mvh Lau */
