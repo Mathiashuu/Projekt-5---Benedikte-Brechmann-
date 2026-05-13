@@ -35,6 +35,12 @@
         padding: 16px 20px 20px 20px;
     }
 
+    .section--title {
+        text-decoration: none;
+        padding: 0;
+        margin: 16px 20px 20px 20px;
+    }
+
     h2 {
         color: var(--primary-red-color);
         font-size: 24px;
@@ -105,18 +111,9 @@
         cursor: pointer;
     }
 
-    .button--back { /* Tilbage knap til homepage */
-        text-decoration: none;
 
-        color: var(--text-color);
-        font-size: 24px;
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        margin: 0 20px 20px 12px;
-        position: relative;
-        top: 20px;
+    .inline--icon {
+        display: inline;
     }
 
     .icon--click {  /* Class til elementer der kan klikkes på */
