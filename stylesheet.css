@@ -8,7 +8,6 @@
 
         --accent-blue-color: #e8f1f8;
         --accent-button-color: #ffffff;
-        --accent-menu-color: #FAF4EE;
 
         background-color: #1d1d1b;
     }
@@ -280,7 +279,7 @@
             padding: 5px;
             border-radius: 20px;
             border: 1px solid #7D7B77;
-            background: var(--accent-menu-color);
+            background: var(--accent-blue-color);
             text-align: center;
             text-decoration: none;
         }
