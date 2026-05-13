@@ -308,6 +308,64 @@
     /* Homepage Slut  */
 
 
+    /* Pakker start  */
+
+    .page-header{
+        display:flex;
+        align-items: center;
+        padding: 5px 0px;
+    }
+
+    .page-title{
+       
+        margin-left: -34px;
+        font-size: 24px;
+    
+    }
+
+    .illustration {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    .accordion-section{padding: 20px;}
+
+    .accordion-pakker{
+        background-color:var(--accent-blue-color);
+        border-radius:15px;
+        margin-bottom: 15px;
+       
+    }
+
+   .accordion-text {
+    width: 100%;
+    padding: 20px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-text h3 {
+    margin: 0;
+    padding: 0;  /* fikser padding issue  */
+}
+
+/* mangler at tilføje dropshadow, tilføjes når javascript laves til den her del  */
+
+
+
+   
+
+
+    /* Pakker slut  */ 
+
+
+
     /* Footer Navigation */ 
 
         .bottom--nav {
