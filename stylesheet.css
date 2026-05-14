@@ -373,10 +373,9 @@
 
         .artikel--container {
             position: relative;
-            margin: 0 20px;
+            margin: 0 20px 40px 20px;
             width: 362px;
-            height: 170px;
-
+            height: 190px;
         }
 
         .artikel--container img {
@@ -389,10 +388,14 @@
 
         .artikel--container-text {
             position: absolute;
-            bottom: -20px;
+            bottom: 0;
             width: 362px;
             background-color: var(--accent-blue-color);
             color: var(--text-color);
+        }
+
+        .artikel--container-titel {
+            font-size: 18px;
         }
 
     /* Artikel side, slut */
