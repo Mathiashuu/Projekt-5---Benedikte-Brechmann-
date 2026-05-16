@@ -483,6 +483,23 @@
 
     /* Booking + Aftaler */
 
+        .booking--header-img {
+            width: 35%;
+            position: relative;
+            padding: 14px 131px;
+        }
+
+        .booking--option-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 12px 12px 12px 0;
+            margin: 16px 20px;
+        }
+
         .aftale--container {
             margin: 16px 20px;
             padding: 14px 0;
