@@ -86,7 +86,7 @@
     }
 
     .box--shadow-element {
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.40);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
     }
 
     /* Knapper og CTA */
@@ -102,11 +102,18 @@
         background-color: var(--primary-red-color);
         color: var(--accent-button-color);
         cursor: pointer;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
     }
 
     .button--booking { /* Booking knap */
         border-radius: 10px;
         padding: 10px 40px;
+    }
+
+    .button--booking-new {
+        position: fixed;
+        bottom: 95px;
+        left: 250px;
     }
 
     .button--logOut {  /* log ud knap */
@@ -472,6 +479,20 @@
         }
 
     /* Artikel side, slut */
+
+
+    /* Booking + Aftaler */
+
+        .aftale--container {
+            margin: 16px 20px;
+            padding: 14px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+
+
+    /* Booking + aftaler, slut */
 
     
 
