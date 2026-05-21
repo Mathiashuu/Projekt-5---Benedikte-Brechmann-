@@ -107,7 +107,8 @@
 
     .button--booking { /* Booking knap */
         border-radius: 10px;
-        padding: 10px 40px; text-decoration: none;
+        padding: 10px 40px; 
+        text-decoration: none;
     }
 
     .button--booking-new {
@@ -146,10 +147,10 @@
         padding: 0 20px 0 20px;
 
         text-decoration: none;
+        text-align: right;
 
         position: absolute;
         top: 20px;
-        left: 450px;
     }
 
     .button--skip a:link {
@@ -251,6 +252,17 @@
 
         .dot1:hover {
             background-color: #b0b0b0;
+        }
+
+        .onboarding--title-element {
+            color: var(--primary-red-color);
+            font-size: 24px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            margin: 0;
+            padding: 16px 20px 18px 20px;
         }
 
     /* Onboarding 1 HTML'S CSS, slut */
@@ -381,6 +393,14 @@
 
         .menu--container-title {
             padding: 8px;
+
+            color: var(--text-color);
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            margin: 0;
         }
         
         .menu--container-img {
@@ -412,19 +432,19 @@
         padding: 20px;
     }
 
-
-
-    .accordion-section{padding: 20px;}
+    .accordion-section{
+        padding: 20px;
+    }
 
     .accordion-pakker{
         background-color:var(--accent-blue-color);
         border-radius:15px;
         margin-bottom: 15px;
-       
+        padding-bottom: 20px;
     }
 
    .accordion-text {
-        width: 100%;
+        /* width: 100%; */
         padding: 20px;
         background: none;
         border: none;
@@ -439,6 +459,17 @@
         padding: 0;  /* fikser padding issue  */
     }
 
+    .accordion--title {
+        color: var(--text-color);
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+    }
+
 /* mangler at tilføje dropshadow, tilføjes når javascript laves til den her del  */
 
 
@@ -450,6 +481,27 @@
 
 
     /* Artikel side */
+
+        .artikel--read-element {
+            color: var(--primary-red-color);
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            margin: 14px 0 14px 0;
+        }
+
+        .artikel--title {
+            color: var(--text-color);
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            margin: 0;
+            padding: 14px 20px 18px 20px;
+        }
 
         .artikel--container {
             position: relative;
@@ -483,6 +535,15 @@
 
         .artikel--container-titel {
             font-size: 18px;
+
+            color: var(--text-color);
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            margin: 0;
+            /*padding: 14px 20px 18px 20px;*/
+
         }
 
         .article--header-container {
@@ -548,74 +609,68 @@
 
 
 
-        
-    
+    /* Profil side start */
+
+        .profil--title {
+            text-align: center;
+            font-size: 28px;
+            padding: 20px 95px;
+        }
 
 
+        /* Profilbillede */
+        .profil--image {
+            text-align: center;
+            padding: 30px 0 20px 0;
+        }
 
-     /* Profil side start */
+        .profil--image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-  .profil--title {
-    text-align: center;
-    font-size: 28px;
-    padding: 20px 95px;
-}
+        /* Navn */
+        .profil--navn {
+            text-align: center;
+            padding: 0 0 30px 0;
+            color: var(--text-color);
+            font-family: "Open Sans", sans-serif;
+        }
 
+        /* Menu container */
+        .profil--menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 20px 30px 20px;
+        }
 
-/* Profilbillede */
-.profil--image {
-    text-align: center;
-    padding: 30px 0 20px 0;
-}
-
-.profil--image img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Navn */
-.profil--navn {
-    text-align: center;
-    padding: 0 0 30px 0;
-    color: var(--text-color);
-    font-family: "Open Sans", sans-serif;
-}
-
-/* Menu container */
-.profil--menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 20px 30px 20px;
-}
-
-/* Menu items */
-.profil--menu-item {
-    background-color: var(--accent-blue-color);
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-}
+        /* Menu items */
+        .profil--menu-item {
+            background-color: var(--accent-blue-color);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+        }
 
 
-.profil--menu-item span {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    color: var(--text-color);
-}
+        .profil--menu-item span {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+            color: var(--text-color);
+        }
 
-.profil--menu-item i {
-    font-size: 24px;
-}
+        .profil--menu-item i {
+            font-size: 24px;
+        }
 
 
-/* Profil side slut */
-
+    /* Profil side slut */
 
     
 
