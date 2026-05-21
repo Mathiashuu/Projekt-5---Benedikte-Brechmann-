@@ -86,7 +86,7 @@
     }
 
     .box--shadow-element {
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.20);
     }
 
     /* Knapper og CTA */
@@ -114,7 +114,7 @@
     .button--booking-new {
         position: fixed;
         bottom: 95px;
-        left: 250px;
+        left: 860px;
     }
 
     .button--logOut {  /* log ud knap */
