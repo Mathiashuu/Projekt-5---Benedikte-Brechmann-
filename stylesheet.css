@@ -16,7 +16,7 @@
         background-color: var(--background-color);
 
         /* Mobile Interface resolution */
-        margin: 0 150px 0 150px;
+        margin: 0 auto 0 auto;
         max-width: 402px;
         min-width: 402px;
         min-height: 874px;
