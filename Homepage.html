@@ -17,14 +17,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <!-- JavaScript -->
+    <script defer src="js/burger.js"></script>
+    <script defer src="js/dropdown.js"></script>
+    <script defer src="js/booking.js"></script>
+    <script defer src="js/onboarding.js"></script>
+
 </head>
 
 <body>
     
     <!-- HEADER -->
     <header class="header">
-        <!-- Hamburger menu (venstre) -->
-        <div>
+        <!-- Burger menu (venstre) -->
+        <div class="openMenu" onclick="openBurgerMenu()"> <!-- BURGER MENU KNAP -->
             <i class="icon--click fa-solid fa-bars header--menu-icon" style="color: #e30613;"></i>
         </div>
 
@@ -37,6 +43,24 @@
         <div>
             <i class="icon--click fa-solid fa-magnifying-glass header--menu-icon" style="color: #e30613;"></i>
         </div>
+
+
+        <!-- BURGER MENU PANEL -->
+
+            <div id="burgerMenu" class="menu--burger-container">
+
+                <i class="icon--click fa-solid fa-xmark closeMenu" onclick="closeBurgerMenu()" style="color: #e30613;"></i>
+
+                <!-- Options bliver printed ud i JavaScript -->
+                <div id="itemsMenu">
+
+
+                </div>
+
+            </div>
+
+        <!-- BURGER MENU PANEL -->
+
     </header>
 
     <main>
