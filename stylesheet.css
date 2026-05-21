@@ -301,34 +301,35 @@
 
 
         /* Velkomst sektion */
-    .welcome {
-    text-align: center;
-    padding: 20px 20px 30px 20px;
-    }
 
-    .welcome--title {
-    font-size: 28px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;  
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    }
+        .welcome {
+            text-align: center;
+            padding: 20px 20px 30px 20px;
+        }
 
-    .welcome--subtitle {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;  
-    color: var(--primary-red-color);
-    margin: 10px 0 0 0;
-    padding: 0;
-    }
+        .welcome--title {
+            font-size: 28px;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;  
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome--subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;  
+            color: var(--primary-red-color);
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
 
         /* Hero sektion */
 
         .hero--carousel {
-    margin: 0 20px 30px 20px;
-    }
+            margin: 0 20px 30px 20px;
+        }
 
         .hero--carousel-slide {
             position: relative;
@@ -379,13 +380,14 @@
             grid-template-columns: 170px 170px;
             grid-template-rows: 170px 170px;
             gap: 18px;
-            margin: 30px 20px 0 20px;
+            margin: 30px 20px 30px 20px;
+            min-height: 435px;
         }
 
         .menu--container-item {
             padding: 5px;
             border-radius: 20px;
-            border: 1px solid #7D7B77;
+            /*border: 1px solid #7D7B77;*/
             background: var(--accent-blue-color);
             text-align: center;
             text-decoration: none;
@@ -469,6 +471,7 @@
         margin: 0;
         padding: 0;
     }
+
 
 /* mangler at tilføje dropshadow, tilføjes når javascript laves til den her del  */
 
