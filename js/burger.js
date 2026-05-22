@@ -15,8 +15,11 @@
 
 // Lav en variabel med en Array liste med de objekter der skal være inde i burger menuen:
 const burgerItems = [
-    {id: "onboarding", href:"#", target:"_self", name:"Onboarding"},
-    {id: " ", href:"#", target:"_self", name:" "},
+    { id: "onboarding", href: "#", target: "_self", name: "Onboarding" },
+    { id: "artikler", href: "#", target: "_self", name: "Artikler" },
+    { id: "pakker", href: "#", target: "_self", name: "Pakker" },
+    { id: "booking", href: "#", target: "_self", name: "Booking" },
+    { id: "info", href: "#", target: "_self", name: "Info om rådgivning" },
     // Fortsæt her
 ]
 
@@ -31,7 +34,7 @@ const menuContainer = document.getElementById("itemsMenu");
 // i svarer til et tal i din array liste. 0, 1, 2, 3 osv.
 for (let i = 0; i < menuItems.length; i++) {
     menuContainer.innerHTML +=                    // husk at += er en operator der putter både tal og string datatyper sammen
-    '<div>' + '<a href="' +  burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
+        '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
 }
 
 
@@ -40,10 +43,10 @@ for (let i = 0; i < menuItems.length; i++) {
 
 // Åben burger menu
 function openBurgerMenu() {
-document.getElementById("burgerMenu").style.width = "200px"; //Hvad synes du er en passende bredde på menuen?
+    document.getElementById("burgerMenu").style.width = "200px"; //Hvad synes du er en passende bredde på menuen?
 }
 
 // Luk burger menu
 function closeBurgerMenu() {
-document.getElementById("burgerMenu").style.width = "0";
+    document.getElementById("burgerMenu").style.width = "0";
 }
