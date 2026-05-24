@@ -11,13 +11,46 @@
 // 'closeModal' class til close knap
 
 
-let datoModal = document.getElementById("datoModal");  
+// Dato Modal JS
+    let datoModal = document.getElementById("datoModal");  
 
-let datoOpn = document.getElementById("datoBtn");  
+    let datoOpn = document.getElementById("datoBtn");  
 
-let close = document.getElementsByClassName("closeModal");
+    let closeModal = document.getElementsByClassName("closeModal")[0];
 
 
-datoOpn.onclick = function() {
-    datoModal.style.display = "block";
-}
+    datoOpn.onclick = function() {
+        datoModal.style.display = "block";
+    }
+
+    closeModal.onclick = function() {
+        datoModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == datoModal) {
+            datoModal.style.display = "none";
+        }
+    }
+
+// Tid Modal JS
+
+    let tidModal = document.getElementById("tidModal");  
+
+    let tidOpn = document.getElementById("tidBtn"); 
+
+    let closeTid = document.getElementsByClassName("closeModalTid")[0];
+
+    tidOpn.onclick = function() {
+        tidModal.style.display = "block";
+    }
+
+    closeTid.onclick = function() {
+        tidModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == tidModal) {
+            tidModal.style.display = "none";
+        }
+    }
