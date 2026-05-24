@@ -1,6 +1,6 @@
 
 // JavaScript til Booking side - lavet af Lau
-// Inspiration fra W3Schools | How TO - CSS/JS Modal
+// Hjælp fra W3Schools | How TO - CSS/JS Modal
 
 // 'datoBtn' ID til dato select knap
 // 'datoModal' ID til dato modal container
@@ -9,6 +9,7 @@
 // 'tidModal' ID til tid modal container
 
 // 'closeModal' class til close knap
+// 'modalConfirm' class til bekræft knap
 
 
 // Dato Modal JS
@@ -18,12 +19,18 @@
 
     let closeModal = document.getElementsByClassName("closeModal")[0];
 
+    let confirmModal = document.getElementsByClassName("modalConfirm")[0];
+
 
     datoOpn.onclick = function() {
         datoModal.style.display = "block";
     }
 
     closeModal.onclick = function() {
+        datoModal.style.display = "none";
+    }
+
+    confirmModal.onclick = function() {
         datoModal.style.display = "none";
     }
 
