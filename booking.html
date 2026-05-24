@@ -17,6 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <!-- JavaScript -->
+    <script defer src="js/burger.js"></script>
+    <script defer src="js/dropdown.js"></script>
+    <script defer src="js/booking.js"></script>
+    <script defer src="js/onboarding.js"></script>
 </head>
 
 <body>
@@ -55,19 +60,33 @@
         <p>Vi går all in for at sikre, at dine behov bliver mødt med nærvær og ærlighed.</p> <br>
 
         <p><b>Dato</b></p>
-        <div class="booking--option-container box--shadow-element icon--click">
+        <div id="datoBtn" class="booking--option-container box--shadow-element icon--click">
             <p>15/05-2026</p>
             <i class="icon--click fa-regular fa-calendar" style="font-size: 18px;"></i>
         </div>
 
         <p><b>Tidspunkt</b></p>
-        <div class="booking--option-container box--shadow-element icon--click">
+        <div id="tidBtn" class="booking--option-container box--shadow-element icon--click">
             <p>10:00 - 11:00</p>
             <i class="icon--click fa-regular fa-calendar" style="font-size: 18px;"></i>
         </div>
 
         <div style="text-align: center;">
             <button type="button" class="button button--booking">Book nu</button>
+        </div>
+
+
+        <!-- Modal til Dato Select -->
+        <div id="datoModal" class="modal">
+            <div>
+                <span class="closeModal"><i class="icon--click fa-solid fa-xmark" style="color: #e30613;"></i></span>
+                <p>Content</p>
+            </div>
+        </div>
+
+        <!-- Modal til Tid Select -->
+        <div id="tidModal" class="modal">
+
         </div>
         
     </main>
