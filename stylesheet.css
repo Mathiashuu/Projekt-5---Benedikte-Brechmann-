@@ -425,25 +425,47 @@
 
 
         .menu--burger-container {
-            background-color: lightblue;
-            
+                        
             display: none; 
             position: fixed; 
             z-index: 101; 
             top: 0;
-            padding-top: 242px;
             margin: 0;
             width: 402px;
             
             overflow: auto; 
             background-color: rgb(0,0,0); 
             background-color: rgba(0,0,0,0.4); 
-        }
 
-        .itemsMenu {
-            font-size: 20px;
+            font-size: 16px;
             font-family: "Open Sans", sans-serif;
             font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .burger--container-background {
+            background-color: var(--accent-button-color);
+            padding: 20px;
+            width: 60%;
+            height: 874px;
+        }
+
+        #itemsMenu {
+            font-size: 18px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            padding: 12px 0;
+        }
+
+        #itemsMenu div {
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+
+        #itemsMenu div a {
+            text-decoration: none;
+            color: var(--text-color);
         }
 
 
