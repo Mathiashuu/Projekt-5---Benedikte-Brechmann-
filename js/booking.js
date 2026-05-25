@@ -48,12 +48,18 @@
 
     let closeTid = document.getElementsByClassName("closeModalTid")[0];
 
+    let confirmTid = document.getElementsByClassName("modalConfirmTid")[0];
+
     tidOpn.onclick = function() {
         tidModal.style.display = "block";
     }
 
-    closeTid.onclick = function() {
+    confirmTid.onclick = function() {
         tidModal.style.display = "none";
+    }
+
+    confirmModal.onclick = function() {
+        datoModal.style.display = "none";
     }
 
     window.onclick = function(event) {
