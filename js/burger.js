@@ -26,7 +26,10 @@ const burgerItems = [
 
 // Lav en variabel hvor du bruger en getElementById metode til at hente en 'itemsMenu' fra vores HTML DOM (document)
 // Denne variabel bruger vi til at putte vores array liste med objekter ind i HTML koden
-const menuContainer = document.getElementById("itemsMenu");
+
+let menuBurger = document.getElementById("burgerMenu");
+
+let menuContainer = document.getElementById("itemsMenu");
 
 
 // Nu skal du lave en for løkke der henter dine burgerItems ind i menuen
@@ -34,19 +37,28 @@ const menuContainer = document.getElementById("itemsMenu");
 // i svarer til et tal i din array liste. 0, 1, 2, 3 osv.
 for (let i = 0; i < menuItems.length; i++) {
     menuContainer.innerHTML +=                    // husk at += er en operator der putter både tal og string datatyper sammen
-        '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
+    '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
 }
 
 
 // Nu skal du lave to funktioner der åbner og lukker burger menuen 
 // Psst.. Vi laver den bare forskellige størrelser for at "skjule" den.. Ik' sige det til nogen.
 
+    closeModal.onclick = function() {
+        datoModal.style.display = "none";
+    }
+
+    menuBurger = function() {
+        datoModal.style.display = "none";
+    }
+
 // Åben burger menu
 function openBurgerMenu() {
-    document.getElementById("burgerMenu").style.width = "200px"; //Hvad synes du er en passende bredde på menuen?
+    menuBurger.style.display = "block"; //Hvad synes du er en passende bredde på menuen?
 }
+
 
 // Luk burger menu
 function closeBurgerMenu() {
-    document.getElementById("burgerMenu").style.width = "0";
+    menuBurger.style.display = "none";
 }
