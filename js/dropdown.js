@@ -1,4 +1,5 @@
 // JavaScript til Dropdown menuer - lavet af Mathias
+// Hjælp fra W3Schools | How TO - Collapsibles/Accordion 
 
 
 // objekt - tæller hvor mange accordions som der er åbnet
