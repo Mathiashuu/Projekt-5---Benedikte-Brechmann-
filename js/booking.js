@@ -1,4 +1,3 @@
-
 // JavaScript til Booking side - lavet af Lau
 // Hjælp fra W3Schools | How TO - CSS/JS Modal
 
@@ -17,7 +16,7 @@
 
     let datoOpn = document.getElementById("datoBtn");  
 
-    let closeModal = document.getElementsByClassName("closeModal")[0];
+    let closeDato = document.getElementsByClassName("closeModal")[0];
 
     let confirmModal = document.getElementsByClassName("modalConfirm")[0];
 
@@ -26,7 +25,9 @@
         datoModal.style.display = "block";
     }
 
-    closeModal.onclick = function() {
+    
+
+    closeDato.onclick = function() {
         datoModal.style.display = "none";
     }
 
@@ -58,7 +59,7 @@
         tidModal.style.display = "none";
     }
 
-    confirmModal.onclick = function() {
+    closeTid.onclick = function() {
         datoModal.style.display = "none";
     }
 

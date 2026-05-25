@@ -15,11 +15,11 @@
 
 // Lav en variabel med en Array liste med de objekter der skal være inde i burger menuen:
 const burgerItems = [
-    { id: "onboarding", href: "#", target: "_self", name: "Onboarding" },
-    { id: "artikler", href: "#", target: "_self", name: "Artikler" },
-    { id: "pakker", href: "#", target: "_self", name: "Pakker" },
-    { id: "booking", href: "#", target: "_self", name: "Booking" },
-    { id: "info", href: "#", target: "_self", name: "Info om rådgivning" },
+    { href: "#", target: "_self", name: "Onboarding" },
+    { href: "#", target: "_self", name: "Artikler" },
+    { href: "#", target: "_self", name: "Pakker" },
+    { href: "#", target: "_self", name: "Booking" },
+    { href: "#", target: "_self", name: "Info om rådgivning" },
     // Fortsæt her
 ]
 
@@ -29,34 +29,29 @@ const burgerItems = [
 
 let menuBurger = document.getElementById("burgerMenu");
 
+menuBurger.display = "none";
+
 let menuContainer = document.getElementById("itemsMenu");
+
+let closeModal = document.getElementsByClassName("closeMenu");
 
 
 // Nu skal du lave en for løkke der henter dine burgerItems ind i menuen
 
 // i svarer til et tal i din array liste. 0, 1, 2, 3 osv.
-for (let i = 0; i < menuItems.length; i++) {
+for (let i = 0; i < burgerItems.length; i++) {
     menuContainer.innerHTML +=                    // husk at += er en operator der putter både tal og string datatyper sammen
     '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
 }
 
-
-// Nu skal du lave to funktioner der åbner og lukker burger menuen 
-// Psst.. Vi laver den bare forskellige størrelser for at "skjule" den.. Ik' sige det til nogen.
-
-    closeModal.onclick = function() {
-        datoModal.style.display = "none";
-    }
-
-    menuBurger = function() {
-        datoModal.style.display = "none";
-    }
+closeModal.onclick = function() {
+    datoModal.style.display = "none";
+}
 
 // Åben burger menu
 function openBurgerMenu() {
-    menuBurger.style.display = "block"; //Hvad synes du er en passende bredde på menuen?
+    menuBurger.style.display = "block"; 
 }
-
 
 // Luk burger menu
 function closeBurgerMenu() {
