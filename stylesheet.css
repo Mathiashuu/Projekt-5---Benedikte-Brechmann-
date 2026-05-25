@@ -500,6 +500,29 @@
 
 
 
+    /* ekstra css tilføjelse pga JS */ 
+    /* Lukket accordion (default) */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Åben accordion (med .active class) */
+.accordion-pakker.active .accordion-content {
+    max-height: 500px;
+}
+
+/* Pil rotation når åben */
+.accordion-pakker.active .accordion-text i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
     /* Køberrådgivning slut  */ 
 
 
