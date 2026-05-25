@@ -27,14 +27,13 @@
     <body>
         
         <main>
-            <!-- Skip knap - top right -->
-            <div class="button--skip">
-                <a href="Homepage.html">Skip ></a>
-            </div>
 
             <div class="slideshow--container">
 
                 <div class="mySlides"> <!-- Slide 1 -->
+                    <div class="button--skip">
+                        <a href="Homepage.html">Skip ></a>
+                    </div>
                     
                     <img src="img/onboarding-page/onboarding01.webp" alt="Onboarding billede med to medarbejdere, der kigger på boligdokumenter">
                     
@@ -45,26 +44,34 @@
                         </p>
                     </div>
 
-                    <button type="button" class="icon--click button slideshow--next" style="margin-left: 150px;">Videre</button>
+                    <button onclick="plusSlides(1)" type="button" class="icon--click button slideshow--next" style="margin-left: 150px;">Videre</button>
                 </div>
 
 
                 <div class="mySlides"> <!-- Slide 2 -->
+
+                    <div class="button--skip">
+                        <a href="Homepage.html">Skip ></a>
+                    </div>
                     
                     <img src="img/onboarding-page/onboarding02.webp" alt="Onboarding billede med to medarbejdere, der kigger på boligdokumenter">
                     
                     <div class="slideshow--margin-element">
                         <h1 class="onboarding--title-element">Vores kompetencer</h1>
                         <p>
-                            Uanset hvor du er på boligrejsen, står vi klar til at hjælpe. Måske har du allerede fundet din drømmebolig og skal blot have gennemlæst købsaftalen og dokumenterne. Eller måske har du brug for hjælp til at finde den bolig, der matcher dine behov. Vi kan gøre en forskel for dig.
+                            Uanset hvor du er på boligrejsen, står vi klar til at hjælpe. Måske har du allerede fundet din drømmebolig og skal blot have gennemlæst købsaftalen. Vi kan gøre en forskel for dig.
                         </p>
                     </div>
 
-                    <button type="button" class="icon--click button" style="margin-left: 150px;">Videre</button>
+                    <button onclick="plusSlides(1)" type="button" class="icon--click button" style="margin-left: 150px;">Videre</button>
                 </div> 
 
 
                 <div class="mySlides"> <!-- Slide 3 -->
+
+                    <div class="button--skip">
+                        <a href="Homepage.html">Skip ></a>
+                    </div>
                     
                     <img src="img/onboarding-page/onboarding03.webp" alt="Onboarding billede med to medarbejdere, der kigger på boligdokumenter">
                 
@@ -75,16 +82,18 @@
                         </p>
                     </div>
 
-                    <button type="button" class="icon--click button" style="margin-left: 133px;">Kom i gang</button>
+                    <a href="Homepage.html" class="icon--click button" style="margin-left: 135px; margin-bottom: 20px;">
+                        Kom i gang
+                    </a>
                 </div> 
 
             </div>
 
             <!-- status dots -->
-            <div style="text-align:center">
-                <span class="dot dot-active" onclick=" "></span> 
-                <span class="dot" onclick=" "></span> 
-                <span class="dot" onclick=" "></span> 
+            <div style="text-align:center; margin-top: 20px;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
 
         </main>

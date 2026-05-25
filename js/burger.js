@@ -15,11 +15,11 @@
 
 // Lav en variabel med en Array liste med de objekter der skal være inde i burger menuen:
 const burgerItems = [
-    { href: "#", target: "_self", name: "Onboarding" },
-    { href: "#", target: "_self", name: "Artikler" },
-    { href: "#", target: "_self", name: "Pakker" },
-    { href: "#", target: "_self", name: "Booking" },
-    { href: "#", target: "_self", name: "Info om rådgivning" },
+    { href: "Onboarding1.html", target: "_self", name: "Onboarding" },
+    { href: "artikler.html", target: "_self", name: "Artikler" },
+    { href: "pakker.html", target: "_self", name: "Pakker" },
+    { href: "booking.html", target: "_self", name: "Booking" },
+    { href: "raedgivning.html", target: "_self", name: "Info om rådgivning" },
     // Fortsæt her
 ]
 
