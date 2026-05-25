@@ -237,20 +237,21 @@
             padding-top: 20px;
         }
 
-        .dot1 {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #d9d9d9;
+        .dot {
+            background-color: grey;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            border-radius: 50%;
+            display: inline-block;
         }
 
-        .dot-active1 {
+        .dot-active {
             background-color: var(--text-color);
         }
 
-        .dot1:hover {
+        .dot:hover {
             background-color: #b0b0b0;
         }
 
@@ -263,6 +264,10 @@
             font-style: normal;
             margin: 0;
             padding: 16px 20px 18px 20px;
+        }
+
+        .slideshow--margin-element {
+            margin: 30px 20px;
         }
 
     /* Onboarding 1 HTML'S CSS, slut */
