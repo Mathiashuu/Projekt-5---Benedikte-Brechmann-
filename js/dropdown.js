@@ -8,7 +8,7 @@ const count = {
 };
 
 
-// array - som danner en liste ...
+// array - henter accordion-pakker fra html -> htmlcollection -> konverter dem til en array 
 var accordionListe = Array.from(document.getElementsByClassName("accordion-pakker"));
 
 
