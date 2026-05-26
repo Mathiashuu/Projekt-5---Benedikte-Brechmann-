@@ -12,13 +12,14 @@
 
 
 // Dato Modal JS
-    let datoModal = document.getElementById("datoModal");  
+    let datoModal = document.getElementById("datoModal");  //Henter modal-containeren til dato
 
-    let datoOpn = document.getElementById("datoBtn");  
+    let datoOpn = document.getElementById("datoBtn");  // Henter knappen der åbner dato-modal
 
-    let closeDato = document.getElementsByClassName("closeModal")[0];
+    let closeDato = document.getElementsByClassName("closeModal")[0]; // Henter luk-knappen (X)
 
-    let confirmModal = document.getElementsByClassName("modalConfirm")[0];
+    let confirmModal = document.getElementsByClassName("modalConfirm")[0]; // Henter bekræft-knappen
+
 
 // Når brugeren klikker på knappen,
 // vises modal-vinduet
