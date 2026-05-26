@@ -63,6 +63,7 @@
         datoModal.style.display = "none";
     }
 
+    // Fælles luk-funktion når man klikker i baggrunden
     window.onclick = function(event) {
         if (event.target == tidModal) {
             tidModal.style.display = "none";
