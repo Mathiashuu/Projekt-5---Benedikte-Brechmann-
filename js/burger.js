@@ -16,6 +16,7 @@ const burgerItems = [
     { href: "pakker.html", target: "_self", name: "Pakker" },
     { href: "booking.html", target: "_self", name: "Booking" },
     { href: "raedgivning.html", target: "_self", name: "Info om rådgivning" }
+    { href: "profil.html", target: "_self", name: "Profil" }
 ]
 
 
@@ -31,16 +32,16 @@ let closeModal = document.getElementsByClassName("closeMenu");
 // i svarer til et tal i din array liste. 0, 1, 2, 3 osv.
 for (let i = 0; i < burgerItems.length; i++) {
     menuContainer.innerHTML +=                    // husk at += er en operator der putter både tal og string datatyper sammen
-    '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
+        '<div>' + '<a href="' + burgerItems[i].href + '" target="' + burgerItems[i].target + '">' + burgerItems[i].name + '</a>' + '</div>';
 }
 
-closeModal.onclick = function() {
+closeModal.onclick = function () {
     datoModal.style.display = "none";
 }
 
 // Åben burger menu
 function openBurgerMenu() {
-    menuBurger.style.display = "block"; 
+    menuBurger.style.display = "block";
 }
 
 // Luk burger menu
