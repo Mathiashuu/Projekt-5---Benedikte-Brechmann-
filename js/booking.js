@@ -1,4 +1,4 @@
-// JavaScript til Booking side - lavet af Lau
+// JavaScript til Booking side - lavet af Lau og Mie
 // Hjælp fra W3Schools | How TO - CSS/JS Modal
 
 // 'datoBtn' ID til dato select knap

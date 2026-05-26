@@ -1,4 +1,4 @@
-// JavaScript til onboarding side - lavet af Mie + Lau
+// JavaScript til onboarding side - lavet af Mie og Lau
 // med hjælp og inspiration fra W3Schools - Slideshows
 
 // Hvis du ikke kan finde nogle elementer, så prøv at søg i dokumentet med CTRL + F / COMMAND + F (tror jeg)

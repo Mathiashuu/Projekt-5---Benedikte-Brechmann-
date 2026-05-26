@@ -1,5 +1,5 @@
 
-// JavaScript til burger menu - lavet af Sarah + Lau
+// JavaScript til burger menu - lavet af Sarah og Lau
 // Jeg har ikke lavet noget CSS til burger menuen. Tør du at lave noget til den, eller skal jeg? :)
 
 // 'openMenu' - åbner burger menu (knap)                    linje 27 i Homepage
