@@ -20,21 +20,25 @@
 
     let confirmModal = document.getElementsByClassName("modalConfirm")[0];
 
-
+// Når brugeren klikker på knappen,
+// vises modal-vinduet
     datoOpn.onclick = function() {
         datoModal.style.display = "block";
     }
 
     
-
+// Lukker modalen når man klikker på krydset
     closeDato.onclick = function() {
         datoModal.style.display = "none";
     }
 
+// Lukker modalen når man bekræfter valg
     confirmModal.onclick = function() {
         datoModal.style.display = "none";
     }
 
+// Lukker modalen hvis brugeren klikker
+// udenfor modal-indholdet
     window.onclick = function(event) {
         if (event.target == datoModal) {
             datoModal.style.display = "none";
@@ -58,10 +62,9 @@
     confirmTid.onclick = function() {
         tidModal.style.display = "none";
     }
-
     closeTid.onclick = function() {
-        datoModal.style.display = "none";
-    }
+    tidModal.style.display = "none";
+    }   
 
     // Fælles luk-funktion når man klikker i baggrunden
     window.onclick = function(event) {
