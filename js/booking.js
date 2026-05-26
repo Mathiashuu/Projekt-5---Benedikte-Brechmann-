@@ -38,13 +38,9 @@
         datoModal.style.display = "none";
     }
 
-// Lukker modalen hvis brugeren klikker
-// udenfor modal-indholdet
-    window.onclick = function(event) {
-        if (event.target == datoModal) {
-            datoModal.style.display = "none";
-        }
-    }
+
+
+    
 
 // Tid Modal JS
 
@@ -69,7 +65,10 @@
 
     // Fælles luk-funktion når man klikker i baggrunden
     window.onclick = function(event) {
-        if (event.target == tidModal) {
-            tidModal.style.display = "none";
-        }
+    if (event.target == datoModal) {
+        datoModal.style.display = "none";
     }
+    if (event.target == tidModal) {
+        tidModal.style.display = "none";
+    }
+}
