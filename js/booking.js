@@ -40,8 +40,6 @@
 
 
 
-    
-
 // Tid Modal JS
 
     let tidModal = document.getElementById("tidModal");  
