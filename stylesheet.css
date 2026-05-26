@@ -530,6 +530,15 @@
         padding: 0;
     }
 
+    .accordion-content ul {
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 0 20px 20px 40px;  /* Extra left padding for bullets */
+    margin: 0;
+}
+
 
 /* mangler at tilføje dropshadow, tilføjes når javascript laves til den her del  */
 
