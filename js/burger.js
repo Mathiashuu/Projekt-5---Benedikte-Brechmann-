@@ -15,7 +15,9 @@ const burgerItems = [
     { href: "artikler.html", target: "_self", name: "Artikler" },
     { href: "pakker.html", target: "_self", name: "Pakker" },
     { href: "booking.html", target: "_self", name: "Booking" },
-    { href: "raedgivning.html", target: "_self", name: "Info om rådgivning" }
+    { href: "raedgivning.html", target: "_self", name: "Info om rådgivning" },
+    { href: "profil.html", target: "_self", name: "Profil" },
+    { href: "aftaler.html", target: "_self", name: "Aftaler" },
 ]
 
 
